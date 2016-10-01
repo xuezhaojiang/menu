@@ -4,6 +4,6 @@
 
 \#ifndef MAIN_H_INCLUDED <br> \#define MAIN_H_INCLUDED <br> //write your header file here.
 
-\#endif // ****_H_INCLUDED
+\#endif // MAIN_H_INCLUDED
 
 本文件夹中，有一个menu.h,这个头文件并没有用到，只是为了显示一下，如果给menu.c(main函数所在的源文件)写头文件该怎么写。
