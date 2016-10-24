@@ -5,7 +5,7 @@
 ```
 typedef struct LinkTable tLinkTable;
 ```
-但是结构的定义就不一定了
+但是结构的定义就不一定了，有时写在c文件中
 ```
 struct LinkTable
 {
