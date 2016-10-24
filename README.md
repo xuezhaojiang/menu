@@ -1,6 +1,20 @@
 # menu
 学习编写头文件，以及多个源文件的写法。
-头文件使用原则：相应源文件中用到的函数声明、结构定义，都写在里面。在相应源文件中只需include这一个头文件即可。为了避免重复声明和定义，头文件的内容需写在:
+头文件使用原则：相应源文件中用到的函数声明、结构声明和定义，都写在里面。       
+最近又学习了一个，为了实现头文件中的接口隐藏，结构的声明应该写在头文件也就是
+```typedef struct LinkTable tLinkTable;''' 
+但是结构的定义就不一定了
+```
+struct LinkTable
+{
+    tLinkTableNode *pHead;
+    tLinkTableNode *pTail;
+    int            SumOfNode;
+    pthread_mutex_t mutex;
+};
+```      
+
+在相应源文件中只需include这一个头文件即可。为了避免重复声明和定义，头文件的内容需写在:
 
 \#ifndef MAIN_H_INCLUDED <br> \#define MAIN_H_INCLUDED <br> //write your header file here.
 
